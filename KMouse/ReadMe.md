@@ -1,12 +1,14 @@
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="Content/main.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/fall1n/kmouse">
+    <img src="Content/mouse.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">kmouse</h3>
   <p align="center">
-    project_description
+    This projects inspired by ThinkPad TrackPoint which i`ve used for years and was extremly happy about it. 
+    It's allow you to move your mouse coursor when forget which hotkey need to press.
+    Hope it would be usefull somehow.  
     <br />
   </p>
-</div>~~~~
+</div>
