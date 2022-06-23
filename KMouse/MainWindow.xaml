@@ -1,0 +1,40 @@
+﻿<Window x:Class="KMouse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KMouse"
+        xmlns:controls="clr-namespace:KMouse.Controls"
+        xmlns:viewModel="clr-namespace:KMouse.ViewModel"
+        mc:Ignorable="d"
+        Background="{StaticResource Background.Primary}"
+        Title="App settings" Height="450" Width="800">
+    <Window.DataContext>
+        <viewModel:MainWindowViewModel />
+    </Window.DataContext>
+    <Grid>
+        <StackPanel>
+            <TextBlock Style="{StaticResource Title}">
+                App settings
+            </TextBlock>
+            <StackPanel Style="{StaticResource Block}">
+                <DockPanel VerticalAlignment="Center" Margin="10">
+                    <Label DockPanel.Dock="Top" Style="{StaticResource Block.Title}">
+                        Sensitivity
+                    </Label>
+                    <TextBox Text="{Binding ElementName=SlColorR, Path=Value, UpdateSourceTrigger=PropertyChanged}"
+                             DockPanel.Dock="Right" Style="{StaticResource Block.TextBox}" />
+                    <Slider Maximum="100" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True"
+                            Name="SlColorR" Value="{Binding SensValue}" />
+                </DockPanel>
+            </StackPanel>
+            <StackPanel Style="{StaticResource Block}">
+                <Label Style="{StaticResource Block.Title}" Margin="10">
+                    Hotkey binding
+                </Label>
+                <controls:HotyeyControl Hotkey="{Binding Hotkey}" />
+                <!-- <TextBox Text="" Style="{StaticResource Block.TextBox}" Margin="10" /> -->
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
