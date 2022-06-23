@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/fall1n/kmouse">
-    <img src="KMouse/Content/mouse.png" alt="Logo" width="80" height="80">
+    <img src="KMouse/Content/track-point.jpg" alt="Logo">
   </a>
 
 <h3 align="center">kmouse</h3>
@@ -13,9 +13,3 @@
     <br />
   </p>
 </div>
-
-[![TrackPoint Screen Shot][product-screenshot]](https://github.com/fall1n/kmouse)
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: KMouse/Content/track-point.jpg
